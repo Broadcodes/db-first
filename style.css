@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+}
+
+table{
+    margin: 0px 100px;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: rgb(110, 110, 110);
+}
+
+.title,
+.property{
+    background-color: rgb(66, 52, 52);
+}
+
+.data:nth-child(odd){
+    background-color: rgb(48, 48, 48);
+}
+
+th,
+tr,
+td{
+    border: 1px solid #fff;
+    padding: 10px;
+    min-width: 100px;
+}
+
+.property td{
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+
+.data td{
+    text-align: center;
+}

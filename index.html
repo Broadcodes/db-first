@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DATABASE</title>
+
+   <link rel="shortcut icon" href="" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+
+   <script type="text/javascript" src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="23">USED CAR DEALER</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="title">
+                    <th>ID</th>
+                    <th>MARCA</th>
+                    <th>MODELLO</th>
+                    <th>TARGA</th>
+                    <th>TIPO</th>
+                    <th>PAESE_IMMATRICOLAZIONE</th>
+                    <th>ANNO_IMMATRICOLAZIONE</th>
+                    <th>KILOMETRI_PERCORSI</th>
+                    <th>ALIMENTAZIONE</th>
+                    <th>CAMBIO</th>
+                    <th>CILINDRATA</th>
+                    <th>POTENZA_MOTORE_kW</th>
+                    <th>POTENZA_MOTORE_CV</th>
+                    <th>CONSUMI_URBANI</th>
+                    <th>CONSUMI_EXTRAURBANI</th>
+                    <th>NUMERO_PROPRIETARI</th>
+                    <th>POSTI</th>
+                    <th>PORTE</th>
+                    <th>NEOPATENTATI</th>
+                    <th>ULTIMA_REVISIONE</th>
+                    <th>COLORE</th>
+                    <th>OPTIONAL</th>
+                    <th>PREZZO</th>
+                </tr>
+                <tr class="property">
+                    <td>Intero - MEDIUMINT - PRIMARY_KEY - AUTOINCREMENT - UNIQUE - NOT_NULL</td>
+                    <td>Stringa - VARCHAR(30) - NOT_NULL</td>
+                    <td>Stringa - VARCHAR(30) - NOT_NULL</td>
+                    <td>Stringa - VARCHAR(10) - NOT_NULL - UNIQUE</td>
+                    <td>Stringa - VARCHAR(20)</td>
+                    <td>Stringa - VARCHAR(30)</td>
+                    <td>Data - DATE - NOT_NULL</td>
+                    <td>Intero - MEDIUMINT - NOT_NULL</td>
+                    <td>Stringa - VARCHAR(15) - NOT_NULL</td>
+                    <td>Stringa - VARCHAR(25) - NOT_NULL</td>
+                    <td>Intero SMALLINT - NOT_NULL</td>
+                    <td>Float FLOAT - NOT_NULL</td>
+                    <td>Intero SMALLINT</td>
+                    <td>Float FLOAT - NOT_NULL</td>
+                    <td>Float FLOAT - NOT_NULL</td>
+                    <td>Intero TINYINT</td>
+                    <td>Intero TINYINT</td>
+                    <td>Intero TINYINT</td>
+                    <td>Intero TINYINT</td>
+                    <td>Data DATETIME - NOT_NULL</td>
+                    <td>Stringa VARCHAR(40) - NOT_NULL</td>
+                    <td>Stringa TEXT</td>
+                    <td>Float FLOAT - NOT_NULL</td>
+                </tr>
+                <tr class="data">
+                    <td>1</td>
+                    <td>AUDI</td>
+                    <td>A3</td>
+                    <td>FE345AC</td>
+                    <td>BERLINA</td>
+                    <td>ITALIA</td>
+                    <td>26-12-2018</td>
+                    <td>160454</td>
+                    <td>DIESEL</td>
+                    <td>AUTOMATICO</td>
+                    <td>2480</td>
+                    <td>294</td>
+                    <td>400</td>
+                    <td>2,4</td>
+                    <td>1,5</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>NULL</td>
+                    <td>0</td>
+                    <td>30-02-2020</td>
+                    <td>BLUE</td>
+                    <td>CLIMA, SISTEMA ABS, ESP, AUTORADIO</td>
+                    <td>30450</td>
+                </tr>
+                <tr class="data">
+                    <td>2</td>
+                    <td>CITROEN</td>
+                    <td>C3</td>
+                    <td>ED843WW</td>
+                    <td>UTILITARIA</td>
+                    <td>NULL</td>
+                    <td>14-06-2017</td>
+                    <td>43523</td>
+                    <td>DIESEL</td>
+                    <td>MANUALE</td>
+                    <td>1300</td>
+                    <td>114</td>
+                    <td>NULL</td>
+                    <td>1,7</td>
+                    <td>1,3</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>02-06-2021</td>
+                    <td>GRAY</td>
+                    <td>CLIMA, SISTEMA ABS, ESP, AUTORADIO, CRUISE CONTROL</td>
+                    <td>15983</td>
+                </tr>
+                <tr class="data">
+                    <td>3</td>
+                    <td>BMW</td>
+                    <td>SERIE 1</td>
+                    <td>GA324FF</td>
+                    <td>UTILITARIA</td>
+                    <td>GERMANIA</td>
+                    <td>26-12-2022</td>
+                    <td>12435</td>
+                    <td>BENZINA</td>
+                    <td>MANUALE</td>
+                    <td>1840</td>
+                    <td>170</td>
+                    <td>345</td>
+                    <td>1,8</td>
+                    <td>1,4</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>NULL</td>
+                    <td>WHITE</td>
+                    <td>NULL</td>
+                    <td>23435</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
